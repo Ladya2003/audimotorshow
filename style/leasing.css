@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+h1, h2, h3, span, li, label, input {
+  font-family: "Montserrat-Regular";
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #bdbdbd;
+  background-image: url(../images/Background.png);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+html nav {
+  margin: -8px -8px 0 -8px;
+  background-color: rgba(196, 231, 255, 0.685);
+  padding: 0.2vw;
+}
+
+html nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html nav ul li {
+  list-style-type: none;
+  font-size: 1.7vw;
+}
+
+html nav ul img {
+  width: 6vw;
+}
+
+html form {
+  background-color: black;
+  color: white;
+  width: 50vw;
+  margin: 8vw auto;
+  padding: 1vw 1vw 4vw 1vw;
+  border-radius: 1.5vw;
+}
+
+html form h1 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+html form h3 {
+  font-size: 1.8vw;
+  text-align: center;
+}
+
+html form .name-surname, html form .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html form .name-surname input, html form .contacts input {
+  font-size: 1.5vw;
+  margin: 2vw;
+  padding: 1vw;
+  color: white;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0.5vw blue;
+          box-shadow: 0 0 0.5vw blue;
+  border: none;
+}
+
+html form .models, html form .color, html form .salon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5vw;
+  margin: 3vw 0 0 2vw;
+}
+
+html form .models .models__radio, html form .models .color__radio, html form .models .salon__radio, html form .color .models__radio, html form .color .color__radio, html form .color .salon__radio, html form .salon .models__radio, html form .salon .color__radio, html form .salon .salon__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2vw 0;
+}
+
+html form .models .models__radio input, html form .models .color__radio input, html form .models .salon__radio input, html form .color .models__radio input, html form .color .color__radio input, html form .color .salon__radio input, html form .salon .models__radio input, html form .salon .color__radio input, html form .salon .salon__radio input {
+  width: 2vw;
+  height: 2vw;
+  margin: 0 1vw 0 2vw;
+}
+
+html form .models .models__radio .first-radio, html form .models .color__radio .first-radio, html form .models .salon__radio .first-radio, html form .color .models__radio .first-radio, html form .color .color__radio .first-radio, html form .color .salon__radio .first-radio, html form .salon .models__radio .first-radio, html form .salon .color__radio .first-radio, html form .salon .salon__radio .first-radio {
+  margin: 0 1vw 0 0;
+}
+
+html form .models .color__radio-1-3, html form .color .color__radio-1-3, html form .salon .color__radio-1-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1vw;
+}
+
+html form .models .color__radio-4-6, html form .color .color__radio-4-6, html form .salon .color__radio-4-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html form .salon {
+  margin: 1vw 0 0 2vw;
+}
+
+html form .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5vw;
+  margin: 2vw 0 4vw 2vw;
+}
+
+html form .data input {
+  width: 50%;
+  font-size: 1.5vw;
+  margin: 2vw 0 0 0;
+  padding: 1vw;
+  color: white;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0.5vw blue;
+          box-shadow: 0 0 0.5vw blue;
+  border: none;
+}
+
+html form .agree {
+  font-size: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vw 0 2vw 0;
+}
+
+html form .agree input {
+  width: 2vw;
+  height: 2vw;
+  margin: 0 1vw 0 2vw;
+}
+
+html form input[type="submit"] {
+  width: 20vw;
+  padding: 1vw;
+  font-size: 1.5vw;
+  background-color: #4795fc;
+  color: white;
+  border-radius: 2vw;
+  margin: 3vw 0 0 2vw;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html form input[type="submit"]:hover {
+  background-color: #1f7cf5;
+}
+
+html form input[type="submit"]:active {
+  background-color: #095ecc;
+}
+
+html footer {
+  margin: -4px -8px -8px -8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+}
+
+html footer .models-footer, html footer .contacts {
+  margin: 2vw;
+}
+
+html footer .models-footer h2, html footer .contacts h2 {
+  font-size: 1.5vw;
+}
+
+html footer .models-footer h3, html footer .contacts h3 {
+  font-size: 1vw;
+}
+
+html footer .social-media img {
+  margin: 0 2vw;
+  width: 5vw;
+}
+/*# sourceMappingURL=leasing.css.map */
